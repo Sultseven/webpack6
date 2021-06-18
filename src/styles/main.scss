@@ -1,0 +1,13 @@
+@import './modules/_oneModule';
+@import './modules/_twoModule';
+
+body{
+	h1{
+		color: red;
+	}
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1600px;
+}
