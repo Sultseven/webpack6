@@ -3,8 +3,13 @@ html(lang="ru")
     meta(charset="utf-8")
     title= "TOXIN"
   body
-    h1 xyu
+    include pug/header.pug
+    
+    .content
+      .container
+         include pug/login.pug
 
+    include pug/footer.pug
 
     script(src="bundle.js")
     script(src="index.js")

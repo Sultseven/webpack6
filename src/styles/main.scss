@@ -1,13 +1,133 @@
 @import './modules/_oneModule';
 @import './modules/_twoModule';
+@import '_fonts.scss';
 
-body{
-	h1{
-		color: red;
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ul,
+li{
+	list-style-type: none;
+}
+.container{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.header{
+	background: #FFFFFF;
+}
+
+.header__flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+.header__nav ul{
+	display: flex;
+}
+.header__nav ul li{
+	margin-right: 20px;
+}
+.header__nav ul li:last-child{
+	margin-right: 0px;
+}
+.header__nav ul li a{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.header__button .signin__button{
+	width: 47px;
+	height: 15px;
+	left: 1017px;
+	top: 27px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	margin-right: 20px;
+	border: 1px solid #BC9CFF;
+	border-radius: 22px;
+	padding: 9px 20px 10px 20px; 
+
+	/* identical to box height */
+	text-transform: uppercase;
+
+	/* Primary Color */
+	color: #BC9CFF;
+}
+
+.header__button .signup__button{
+	width: 157px;
+	height: 15px;
+	left: 1123px;
+	top: 27px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 9px 20px 10px 20px; 
+	border: 1px solid #BC9CFF;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+
+	/* identical to box height */
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.footer{
+	/*position: absolute;
+	left: 0;
+	bottom: 0;*/
+	background: #FFFFFF;
+	width: 100%;
+
+	border-top: 1px solid  #E5E5E5;
+	.footer__menu{
+		padding-top: 113px;
+		padding-bottom: 100px;
+	
+		.footer_menu-row{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	.footer__Copbar{
+		border-top: 1px solid  #E5E5E5;
+		padding-top: 26px;
+		padding-bottom: 26px;
+		.footer_Copbar-row{
+			display: flex;
+			justify-content: space-between;
+
+			.footer_Copbar-soc{
+				display: flex;
+				justify-content: space-between;
+			}
+		}
 	}
 }
 
-.container{
-	margin: 0 auto;
-	max-width: 1600px;
+.content{
+	padding-top: 300px;
+	padding-bottom: 200px;
 }
