@@ -1,0 +1,436 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(079ca05d3ded9bc107ab.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(3cd786652b8a2e9d41f2.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.header {
+  background: rgba(31, 32, 65, 0.05);
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header__nav ul li {
+  margin-right: 20px;
+}
+
+.header__nav ul li:last-child {
+  margin-right: 0px;
+}
+
+.header__nav ul li a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.header__button .signin__button {
+  width: 47px;
+  height: 15px;
+  left: 1017px;
+  top: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 20px;
+  border: 1px solid #BC9CFF;
+  border-radius: 22px;
+  padding: 9px 20px 10px 20px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Primary Color */
+  color: #BC9CFF;
+}
+
+.header__button .signup__button {
+  width: 157px;
+  height: 15px;
+  left: 1123px;
+  top: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 9px 20px 10px 20px;
+  border: 1px solid #BC9CFF;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Component footer.pug */
+.footer {
+  /*position: absolute;
+  left: 0;
+  bottom: 0;*/
+  background: rgba(31, 32, 65, 0.05);
+  width: 100%;
+  border-top: 1px solid #E5E5E5;
+}
+.footer .footer__menu {
+  padding-top: 113px;
+  padding-bottom: 100px;
+}
+.footer .footer__menu .footer_menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__Copbar {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.footer .footer__Copbar .footer_Copbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__Copbar .footer_Copbar-row .footer_Copbar-soc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+
+/* Component Login.pug */
+.login {
+  width: 380px;
+  height: 358px;
+  left: 560px;
+  top: 702px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.login .login__container {
+  padding: 40px 20px 32px 20px;
+}
+.login h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 20px;
+  /* Dark 100% */
+  color: #1F2041;
+}
+.login .login__email input {
+  width: 320px;
+  height: 44px;
+  left: 590px;
+  top: 792px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.login .login__password input {
+  width: 320px;
+  height: 44px;
+  left: 590px;
+  top: 792px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.login .login__btn {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  left: 590px;
+  top: 910px;
+  margin-bottom: 30px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.login .login__btn a {
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.login .login__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.login .login__bottom .login__bottom-href {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.login .login__bottom .login__bottom-btn {
+  width: 99px;
+  height: 44px;
+  left: 811px;
+  top: 984px;
+  border-radius: 22px;
+  border: 1px solid #8BA4F9;
+}
+.login .login__bottom .login__bottom-btn a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* Primary Color */
+  color: #BC9CFF;
+}
+
+/* Component register.pug */
+.register {
+  width: 380px;
+  height: 646px;
+  left: 140px;
+  top: 564px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.register .register__container {
+  padding: 40px 20px 30px 20px;
+}
+.register h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  /* Dark 100% */
+  color: #1F2041;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.register .register__name input {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 654px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.register .register__surname input {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 654px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.register .pol {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+}
+.register .pol input {
+  margin-right: 10px;
+}
+.register .register__data p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1F2041;
+  margin-bottom: 5px;
+}
+.register .register__data input {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 826px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.register .register__singin p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1F2041;
+  margin-bottom: 5px;
+}
+.register .register__singin input {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 910px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.register .register__password input {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 964px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.register .register__p {
+  margin-bottom: 10px;
+}
+.register .register__btn {
+  width: 320px;
+  height: 44px;
+  left: 170px;
+  top: 1062px;
+  margin-bottom: 30px;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.register .register__btn a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.register .register__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register .register__bottom .register__bottom-href {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.register .register__bottom .register__bottom-btn {
+  width: 99px;
+  height: 44px;
+  left: 391px;
+  top: 1136px;
+  border-radius: 22px;
+  border: 1px solid #8BA4F9;
+}
+.register .register__bottom .register__bottom-btn a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* Primary Color */
+  color: #BC9CFF;
+}

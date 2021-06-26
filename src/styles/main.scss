@@ -8,6 +8,7 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
+
 a{
 	text-decoration: none;
 }
@@ -21,7 +22,7 @@ li{
 }
 
 .header{
-	background: #FFFFFF;
+	background: rgba(31, 32, 65, 0.05);
 }
 
 .header__flex{
@@ -94,11 +95,13 @@ li{
 	color: #FFFFFF;
 }
 
+
+/* Component footer.pug */
 .footer{
 	/*position: absolute;
 	left: 0;
 	bottom: 0;*/
-	background: #FFFFFF;
+	background: rgba(31, 32, 65, 0.05);
 	width: 100%;
 
 	border-top: 1px solid  #E5E5E5;
@@ -130,4 +133,351 @@ li{
 .content{
 	padding-top: 300px;
 	padding-bottom: 200px;
+}
+
+/* Component Login.pug */
+.login{
+	width: 380px;
+	height: 358px;
+	left: 560px;
+	top: 702px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+	.login__container{
+		padding: 40px 20px 32px 20px;
+	}
+
+	h3{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		padding-bottom: 20px;
+
+
+		/* Dark 100% */
+
+		color: #1F2041;
+	}
+
+	.login__email input{
+		width: 320px;
+		height: 44px;
+		left: 590px;
+		top: 792px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+	}
+
+
+	.login__password input{
+		width: 320px;
+		height: 44px;
+		left: 590px;
+		top: 792px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.login__btn{
+		display: flex;
+		width: 320px;
+		height: 44px;
+		left: 590px;
+		top: 910px;
+
+		margin-bottom: 30px;
+
+		/* Primary Gradient */
+
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		border-radius: 22px;
+
+		a{
+			justify-content: center;
+			align-items: center;
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			/* identical to box height */
+
+			text-align: center;
+			text-transform: uppercase;
+
+			color: #FFFFFF;
+		}
+	}
+
+	.login__bottom{
+		display: flex;
+		justify-content: space-between;
+
+		.login__bottom-href{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			/* identical to box height, or 129% */
+
+			display: flex;
+			align-items: center;
+
+			color: #000000;
+		}
+
+		.login__bottom-btn{
+			width: 99px;
+			height: 44px;
+			left: 811px;
+			top: 984px;
+
+			border-radius: 22px;
+			border: 1px solid #8BA4F9;
+
+			a{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				/* identical to box height */
+
+				text-align: center;
+				text-transform: uppercase;
+
+				/* Primary Color */
+
+				color: #BC9CFF;
+			}
+		}
+	}
+}
+
+/* Component register.pug */
+
+.register{
+	width: 380px;
+	height: 646px;
+	left: 140px;
+	top: 564px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	.register__container{
+		padding: 40px 20px 30px 20px;
+	}
+	h3{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		/* identical to box height */
+		/* Dark 100% */
+		color: #1F2041;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.register__name input{
+		width: 320px;
+		height: 44px;
+		left: 170px;
+		top: 654px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+		margin-bottom: 10px;
+	}
+	.register__surname input{
+		width: 320px;
+		height: 44px;
+		left: 170px;
+		top: 654px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+		margin-bottom: 10px;
+	}
+
+	.pol{
+		margin-bottom: 20px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		/* identical to box height, or 171% */
+		/* Dark 75% */
+		color: rgba(31, 32, 65, 0.75);
+		input{
+			margin-right: 10px;
+		}
+	}
+
+	.register__data{
+		p{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			/* identical to box height */
+			text-transform: uppercase;
+			/* Dark 100% */
+			color: #1F2041;
+			margin-bottom: 5px;
+		}
+		input{
+			width: 320px;
+			height: 44px;
+			left: 170px;
+			top: 826px;
+
+			background: #FFFFFF;
+			border: 1px solid rgba(31, 32, 65, 0.25);
+			box-sizing: border-box;
+			border-radius: 4px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.register__singin{
+		p{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			/* identical to box height */
+
+			text-transform: uppercase;
+
+			/* Dark 100% */
+
+			color: #1F2041;
+			margin-bottom: 5px;
+		}
+
+		input{
+			width: 320px;
+			height: 44px;
+			left: 170px;
+			top: 910px;
+
+			background: #FFFFFF;
+			border: 1px solid rgba(31, 32, 65, 0.25);
+			box-sizing: border-box;
+			border-radius: 4px;
+			margin-bottom: 10px;
+		}
+	}
+	.register__password input{
+			width: 320px;
+			height: 44px;
+			left: 170px;
+			top: 964px;
+
+			background: #FFFFFF;
+			border: 1px solid rgba(31, 32, 65, 0.25);
+			box-sizing: border-box;
+			border-radius: 4px;
+			margin-bottom: 10px;
+	}
+	.register__p{
+		margin-bottom: 10px;
+	}
+	.register__btn{
+		width: 320px;
+		height: 44px;
+		left: 170px;
+		top: 1062px;
+		margin-bottom: 30px;
+		/* Primary Gradient */
+
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		border-radius: 22px;
+		a{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			/* identical to box height */
+
+			text-align: center;
+			text-transform: uppercase;
+
+			color: #FFFFFF;
+		}
+	}
+	.register__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.register__bottom-href{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			/* identical to box height, or 129% */
+
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+		}
+
+		.register__bottom-btn{
+			width: 99px;
+			height: 44px;
+			left: 391px;
+			top: 1136px;
+
+			border-radius: 22px;
+			border: 1px solid #8BA4F9;
+			a{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				/* identical to box height */
+
+				text-align: center;
+				text-transform: uppercase;
+
+				/* Primary Color */
+
+				color: #BC9CFF;
+			}
+		}
+	}
 }

@@ -83,11 +83,20 @@ module.exports = {
                 // npm i style-loader css-loader sass sass-loader -D
             },
             
+            
             /** Картинки */
+             /*
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
                 type: 'asset/resource',
-            },
+            },*/
+
+            {//npm install --save-dev file-loader 
+          test: /\.(png|jpg|gif|svg)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',}
+          },
             /** Шрифты */
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,

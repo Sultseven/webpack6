@@ -1,9 +1,19 @@
-input(type="checkbox" id="purple")
-label(for="purple") Сделать страницу фиолетовой
+.login
+  .login__container
+    h3 Войти
+    form(action="" method="POST")
 
-form(action="" method="POST")
-  p login:
-    input(type="text" name="title" placeholder="login")
-  p password:
-    input(type="text" name="year" placeholder="password")
-  input(type="submit")
+      div(class="login__email") 
+        input(type="text" name="title" placeholder="Email")
+
+      div(class="login__password") 
+        input(type="text" name="year" placeholder="Пароль")
+
+    div(class="login__btn") 
+      a(href='#') Войти
+
+    .login__bottom
+      a(class='login__bottom-href', href='#') Нет аккаунта на Toxin?
+      
+      div(class='login__bottom-btn')
+       a(href='#') Создать

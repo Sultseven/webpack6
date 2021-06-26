@@ -1,0 +1,29 @@
+.register
+  .register__container
+    h3 Регистрация аккаунта 
+    form(action="" method="POST")
+      div(class="register__name") 
+        input(type="text" name="name" placeholder="Имя")
+      div(class="register__surname") 
+        input(type="text" name="surname" placeholder="Фамилия")
+      div(class="pol")
+        <input type="radio" name="pol" атрибуты> Мужчина
+        <input type="radio" name="pol" атрибуты> Женщина
+      div(class="register__data")
+        p Дата рождения
+        input(type="text" name="date_r" placeholder="ДД.мм.ГГГГ")
+      div(class="register__singin")
+        p Данные для входа в сервис
+        input(type="text" name="singin" placeholder="Email")
+      div(class="register__password")
+        input(type="text" name="rpassword" placeholder="Пароль")
+      div(class="register__p")
+        <input type="checkbox" checked> Получать спецпредложения
+      div(class='register__btn')
+        a(href='#') Перейти к оплате
+
+      .register__bottom
+        a(class='register__bottom-href', href='#') Уже есть аккаунт на Toxin
+        div(class='register__bottom-btn') 
+          a(href='#') Войти
+
